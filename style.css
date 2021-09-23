@@ -75,6 +75,9 @@ body {
   margin-top: 80px;
   margin-bottom: 50px;
 }
+.info:hover {
+  background: hsl(49, 92%, 86%);
+}
 .sedan-info {
   color: hsl(31, 77%, 52%);
 }
