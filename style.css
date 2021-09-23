@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(0, 0%, 95%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.container img {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.container h1 {
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.container p {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-left: 50px;
+  margin-right: 100px;
+  line-height: 25px;
+}
+
+.sedan {
+  background: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+.info {
+  font-family: Lexend Deca;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border-style: none;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.sedan-info {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-info {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-info {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 755px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container img {
+    /* background: hsl(184, 100%, 68%); */
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .container h1 {
+    color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container p {
+    margin-right: 50px;
+  }
+
+  .info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
